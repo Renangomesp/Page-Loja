@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cortinas Pro — Medição, Venda e Instalação</title>
+    <meta name="description"
+        content="Cortinas sob medida: blackout, voil, painéis e automação. Medição e instalação profissional." />
+    <link rel="stylesheet" href="style.css">
+    <!-- Google font opcional -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <div class="logo">CP</div>
+                <div>
+                    <div class="brand-title">Cortinas <span class="accent">Pro</span></div>
+                    <div class="brand-sub">Medição • Venda • Instalação</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#servicos">Serviços</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#contato" class="btn-outline">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1>Transforme suas janelas<br><span class="accent">com design e técnica</span></h1>
+                    <p class="lead">Cortinas sob medida, instalação profissional e opções de automação para residências
+                        e empresas. Medição no local e garantia de acabamento.</p>
+                    <div class="hero-ctas">
+                        <a href="#contato" class="btn-primary">Solicitar orçamento</a>
+                        <a href="#portfolio" class="btn-ghost">Ver portfólio</a>
+                    </div>
+
+                    <ul class="highlights">
+                        <li>✅ Medição técnica no local</li>
+                        <li>✅ Instalação com garantia</li>
+                        <li>✅ Opções motorizadas e smart</li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <!-- Use uma imagem de alta qualidade localmente ou via Unsplash -->
+                    <img src="./imagens/foto1.jpg" alt="Cortina instalada" />
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="container section">
+            <h2 class="section-title">Nossos serviços</h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-top"><span class="icon">🛒</span></div>
+                    <h3>Venda de cortinas</h3>
+                    <p>Blackout, voil, linho, painéis e cortineiros. Materiais selecionados e opções sob medida.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-top"><span class="icon">📐</span></div>
+                    <h3>Medição e instalação</h3>
+                    <p>Medição técnica no local, instalação com acabamento e garantia. Equipe treinada.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-top"><span class="icon">⚙️</span></div>
+                    <h3>Automação</h3>
+                    <p>Motores para cortinas, integração com assistentes e controles remotos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="portfolio" class="container section">
+            <h2 class="section-title">Portfólio</h2>
+            <p class="muted">Projetos reais — clique para ampliar.</p>
+            <div class="gallery">
+                <img src="./imagens/foto1.jpg" alt="Projeto 1" data-full="./imagens/foto1.jpg">
+                <img src="./imagens/foto2.jpg" alt="Projeto 2" data-full="./imagens/foto2.jpg">
+                <img src="https://images.unsplash.com/photo-1582585191113-79b72d3f2f4c?q=80&w=1200&auto=format&fit=crop"
+                    alt="Projeto 3"
+                    data-full="https://images.unsplash.com/photo-1582585191113-79b72d3f2f4c?q=80&w=1200&auto=format&fit=crop">
+            </div>
+        </section>
+
+        <section id="contato" class="container section contact-section">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h2>Peça seu orçamento</h2>
+                    <p class="muted">Preencha o formulário e abraremos o WhatsApp com sua mensagem pronta. Sem backend —
+                        simples e seguro.</p>
+
+                    <form id="contactForm" class="form" autocomplete="off" novalidate>
+                        <div class="form-row">
+                            <label>Nome
+                                <input type="text" name="nome" placeholder="Seu nome" required>
+                            </label>
+                           
+                        </div>
+
+                        <label>Tipo de serviço
+                            <select name="servico">
+                                <option value="Orçamento">Orçamento</option>
+                                <option value="Instalação">Instalação</option>
+                                <option value="Automação">Automação</option>
+                            </select>
+                        </label>
+
+                        <label>Mensagem
+                            <textarea name="mensagem" rows="4"
+                                placeholder="Descreva o que precisa (largura, altura aproximada, prazo...)"
+                                required></textarea>
+                        </label>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">Enviar via WhatsApp</button>
+                            <button type="button" id="clearBtn" class="btn-ghost">Limpar</button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="info-card">
+                    <h3>Contato</h3>
+                    <p class="muted">📞 <strong>(71) 984029542</strong></p>
+                    <p class="muted">✉ contato@cortinaspro.com</p>
+                    <p class="muted">Atendimento: Seg–Sex 8h–18h • Sábado 9h–13h</p>
+
+                    <div class="whatsapp-cta">
+                        <a id="waQuick" class="wa-btn" href="#" title="Abrir WhatsApp">
+                            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden>
+                                <path fill="currentColor" d="M..." />
+                            </svg>
+                            Falar no WhatsApp
+                        </a>
+                        <p class="muted small">Clique para abrir o chat rapidamente.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>© <span id="year"></span> Cortinas Pro — Todos os direitos reservados</div>
+            <div class="muted small">Feito com atenção aos detalhes</div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+        <img id="lbImg" alt="Imagem ampliada">
+    </div>
+
+    <!-- WhatsApp floating button -->
+    <a id="waFloat" class="wa-float" href="#" aria-label="Abrir WhatsApp">
+        <img src="./imagens/whatssap.png" alt="whatssap" viewBox="0 0 24 24" width="100%" height="100%"  aria-hidden>
+    </a>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
