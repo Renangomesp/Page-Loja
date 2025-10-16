@@ -1,5 +1,6 @@
 /* Reset básico + variáveis */
 :root {
+     
     --bg: #f7f7f9;
     --card: #ffffff;
     --text: #1e1e1e;
@@ -16,8 +17,11 @@
     font-size: 16px;
 }
 
+
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+     scroll-behavior: smooth;
+
 }
 
 html,
@@ -94,7 +98,8 @@ body {
 
 /* Hero */
 .hero {
-    padding: 36px 0
+    padding: 36px 0;
+   
 }
 
 .hero-grid {
@@ -205,7 +210,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
-    margin-top: 14px
+    margin-top: 14px;
+     
 }
 
 .gallery img {
@@ -214,7 +220,8 @@ body {
     object-fit: cover;
     border-radius: 10px;
     cursor: pointer;
-    transition: transform .18s ease
+    transition: transform .18s ease;
+     
 }
 
 .gallery img:hover {
