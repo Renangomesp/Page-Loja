@@ -28,8 +28,8 @@ html,
 body {
     height: 100%;
     margin: 0;
-    background: var(--bg);
-    color: var(--text)
+    background: #2C2C2C;
+    color: #E5E5E5;
 }
 
 .container {
@@ -40,8 +40,9 @@ body {
 
 /* Header */
 .site-header {
-    background: linear-gradient(180deg, #fff, #fbfbfb);
-    border-bottom: 1px solid rgba(16, 16, 16, 0.04)
+    background: #3A3A3A;
+    border-bottom: 1px solid rgba(16, 16, 16, 0.04);
+    
 }
 
 .header-inner {
@@ -61,7 +62,7 @@ body {
     width: 56px;
     height: 56px;
     border-radius: 10px;
-    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    background: #b89a43;
     display: grid;
     place-items: center;
     color: #fff;
@@ -81,9 +82,10 @@ body {
 /* Nav */
 .nav a {
     margin-left: 18px;
-    color: var(--muted);
+    color: #b89a43;
     text-decoration: none;
-    font-weight: 600
+    font-weight: 600;
+    box-shadow: 0 8px 24px rgba(184, 154, 67, 0.2);
 }
 
 .nav a.btn-outline {
@@ -93,7 +95,7 @@ body {
 }
 
 .nav a:hover {
-    color: var(--accent)
+    color: var(--muted);
 }
 
 /* Hero */
@@ -106,17 +108,21 @@ body {
     display: grid;
     grid-template-columns: 1fr 520px;
     gap: 28px;
-    align-items: center
+    align-items: center;
+    background: #3A3A3A;
+    border-radius: 12px;
+    box-shadow : 0 8px 24px rgba(16, 16, 16, 0.04);
 }
 
 .hero-content h1 {
     font-size: 36px;
     margin: 0 0 10px 0;
-    line-height: 1.05
+    line-height: 1.05;   
 }
 
+
 .lead {
-    color: var(--muted);
+    color: white;
     margin: 0 0 18px
 }
 
@@ -131,25 +137,37 @@ body {
 
 .btn-primary {
     display: inline-block;
-    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    background: #b89a43;
     color: white;
     padding: 12px 16px;
     border-radius: 10px;
-    font-weight: 700
+    font-weight: 700;
+    box-shadow: 0 8px 24px rgba(184, 154, 67, 0.2);
+}
+.btn-primary:hover{
+    background: #a38636;
+    box-shadow: 0 8px 24px rgba(184, 154, 67, 0.3);
 }
 
 .btn-ghost {
     display: inline-block;
-    border: 1px solid rgba(16, 16, 16, 0.06);
     padding: 10px 14px;
-    border-radius: 10px
+    border-radius: 10px;
+    background: #b89a43;
+    color: white;
+    box-shadow: 0 8px 24px rgba(184, 154, 67, 0.2);
+   
 }
+.btn-ghost:hover {
+    background: #a38636;
+    box-shadow: 0 8px 24px rgba(184, 154, 67, 0.3);
+    }
 
 .highlights {
     display: flex;
     gap: 18px;
     margin-top: 18px;
-    color: var(--muted);
+    color: white;
     list-style: none;
     padding: 0
 }
@@ -179,7 +197,7 @@ body {
 }
 
 .muted {
-    color: var(--muted)
+    color: white;
 }
 
 /* Cards */
@@ -191,10 +209,10 @@ body {
 }
 
 .card {
-    background: var(--card);
+    background: #3A3A3A;
     padding: 18px;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(16, 16, 16, 0.04)
+    box-shadow: 0 8px 24px rgba(2, 2, 2, 0.04)
 }
 
 .card-top {
@@ -233,14 +251,14 @@ body {
     display: grid;
     grid-template-columns: 1fr 360px;
     gap: 20px;
-    align-items: start
+    align-items: start;
 }
 
 .contact-card {
-    background: var(--card);
+    background: #3A3A3A;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 12px 30px rgba(16, 16, 16, 0.05)
+    box-shadow: 0 12px 30px rgba(16, 16, 16, 0.05);
 }
 
 .info-card {
@@ -252,7 +270,7 @@ body {
     display: block;
     margin-bottom: 10px;
     font-weight: 600;
-    color: var(--text)
+
 }
 
 .form input,
