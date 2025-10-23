@@ -390,19 +390,23 @@ body {
 
 @media (max-width:600px) {
     .cards {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
+    }
+    .hero-ctas {
+        display: flex;
+        
     }
 
     .nav a {
-        display: none
+        display: none;
     }
 
     .hero-content h1 {
-        font-size: 26px
+        font-size: 26px;
     }
 
     .hero-visual {
         order: -1;
-        margin-bottom: 14px
+        margin-bottom: 14px;
     }
 }
