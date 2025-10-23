@@ -1,6 +1,6 @@
 /* Reset básico + variáveis */
 :root {
-     
+
     --bg: #f7f7f9;
     --card: #ffffff;
     --text: #1e1e1e;
@@ -20,14 +20,14 @@
 
 * {
     box-sizing: border-box;
-     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 
 }
 
 html,
 body {
-    height: 100%;
-    margin: 0;
+    
+    
     background: #2C2C2C;
     color: #E5E5E5;
 }
@@ -42,7 +42,7 @@ body {
 .site-header {
     background: #3A3A3A;
     border-bottom: 1px solid rgba(16, 16, 16, 0.04);
-    
+
 }
 
 .header-inner {
@@ -101,7 +101,7 @@ body {
 /* Hero */
 .hero {
     padding: 36px 0;
-   
+
 }
 
 .hero-grid {
@@ -111,13 +111,13 @@ body {
     align-items: center;
     background: #3A3A3A;
     border-radius: 12px;
-    box-shadow : 0 8px 24px rgba(16, 16, 16, 0.04);
+    box-shadow: 0 8px 24px rgba(16, 16, 16, 0.04);
 }
 
 .hero-content h1 {
     font-size: 36px;
     margin: 0 0 10px 0;
-    line-height: 1.05;   
+    line-height: 1.05;
 }
 
 
@@ -144,7 +144,8 @@ body {
     font-weight: 700;
     box-shadow: 0 8px 24px rgba(184, 154, 67, 0.2);
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background: #a38636;
     box-shadow: 0 8px 24px rgba(184, 154, 67, 0.3);
 }
@@ -156,12 +157,13 @@ body {
     background: #b89a43;
     color: white;
     box-shadow: 0 8px 24px rgba(184, 154, 67, 0.2);
-   
+
 }
+
 .btn-ghost:hover {
     background: #a38636;
     box-shadow: 0 8px 24px rgba(184, 154, 67, 0.3);
-    }
+}
 
 .highlights {
     display: flex;
@@ -229,7 +231,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     margin-top: 14px;
-     
+
 }
 
 .gallery img {
@@ -239,7 +241,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: transform .18s ease;
-     
+
 }
 
 .gallery img:hover {
@@ -392,10 +394,13 @@ body {
     .cards {
         grid-template-columns: 1fr;
     }
+
     .hero-ctas {
         display: flex;
-        
+
     }
+    
+     
 
     .nav a {
         display: none;
