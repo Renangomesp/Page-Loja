@@ -21,6 +21,7 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 
 }
 
@@ -35,12 +36,12 @@ body {
 .container {
     max-width: var(--container);
     margin: 0 auto;
-    padding: 28px
+    padding: 28px;
 }
 
 /* Header */
 .site-header {
-    background: #3A3A3A;
+    background-color: #3A3A3A;
     border-bottom: 1px solid rgba(16, 16, 16, 0.04);
 
 }
@@ -85,13 +86,13 @@ body {
     color: #b89a43;
     text-decoration: none;
     font-weight: 600;
-    box-shadow: 0 8px 24px rgba(184, 154, 67, 0.2);
 }
 
 .nav a.btn-outline {
     padding: 8px 12px;
-    border-radius: 10px;
-    border: 1px solid rgba(16, 16, 16, 0.06)
+    border-radius: 17px;
+    border: 1px solid rgba(16, 16, 16, 0.1);
+    
 }
 
 .nav a:hover {
@@ -265,7 +266,9 @@ body {
 
 .info-card {
     background: transparent;
-    padding: 8px
+    padding: 8px;
+    padding: 10px 14px;
+    
 }
 
 .form label {
@@ -296,8 +299,16 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-top: 8px
+    margin-top: 8px;
 }
+
+.wa-btn{
+    text-decoration: none;
+    color: tan;
+    padding-bottom: 20px;
+    
+}
+
 
 /* Footer */
 .site-footer {

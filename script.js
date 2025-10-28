@@ -1,6 +1,6 @@
 /* ========== CONFIG ========== */
 /* Número de exemplo (troque pelo seu número no formato internacional, ex: 5511998765432) */
-const WA_NUMBER = "5511999999999"; // <<< substituir pelo número real
+const WA_NUMBER = "5531986803805"; // <<< substituir pelo número real
 
 /* Mensagem padrão que abre no WhatsApp caso o usuário não digite nada extra */
 const WA_DEFAULT_PREFIX = "Olá, gostaria de um orçamento.";
@@ -63,7 +63,7 @@ if (form) {
     // Monta a mensagem que será enviada via wa.me
     let message = `${WA_DEFAULT_PREFIX}\n\n*Nome:* ${nome} ${telefone}\n*Serviço:* ${servico}\n*Mensagem:* ${mensagemUser}`;
 
-    const url = `https://wa.me/${5571984029542}?text=${encodeMessage(message)}`;
+    const url = `https://wa.me/${5531986803805}?text=${encodeMessage(message)}`;
 
     // Abre em nova aba (ou app no celular)
     window.open(url, "_blank");
@@ -87,10 +87,10 @@ const quickMessage = encodeMessage(
 );
 
 if (waFloat) {
-  waFloat.href = `https://wa.me/${5571984029542}?text=${quickMessage}`;
+  waFloat.href = `https://wa.me/${5531986803805}?text=${quickMessage}`;
   waFloat.target = "_blank";
 }
 if (waQuick) {
-  waQuick.href = `https://wa.me/${5571984029542}?text=${quickMessage}`;
+  waQuick.href = `https://wa.me/${5531986803805}?text=${quickMessage}`;
   waQuick.target = "_blank";
 }
