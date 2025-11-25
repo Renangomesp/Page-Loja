@@ -359,26 +359,7 @@ body {
     z-index: 1300
 }
 
-/* WhatsApp floating button */
-.wa-float {
-    position: fixed;
-    right: 18px;
-    bottom: 18px;
-    background: linear-gradient(180deg, var(--accent), var(--accent-2));
-    width: 56px;
-    height: 56px;
-    border-radius: 999px;
-    display: grid;
-    place-items: center;
-    color: white;
-    box-shadow: 0 14px 30px rgba(15, 123, 74, 0.18);
-    text-decoration: none;
-    z-index: 1400
-}
 
-.wa-float svg {
-    display: block;
-}
 
 /* Small */
 .small {
