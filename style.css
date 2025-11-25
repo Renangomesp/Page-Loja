@@ -13,22 +13,24 @@
     --container: 1200px;
     font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
+    --webkit-scrollbar: none;
     -moz-osx-font-smoothing: grayscale;
     font-size: 16px;
+    --scrollbar-background: rgba(0,0,0,0);
+    --scrollbar-color: rgba(0, 0, 0, 0);
 }
 
 
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+
 
 }
 
 html,
 body {
-    
-    
+    margin: 0;
     background: #2C2C2C;
     color: #E5E5E5;
 }
@@ -92,7 +94,7 @@ body {
     padding: 8px 12px;
     border-radius: 17px;
     border: 1px solid rgba(16, 16, 16, 0.1);
-    
+
 }
 
 .nav a:hover {
@@ -228,12 +230,14 @@ body {
 
 /* Gallery */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-top: 14px;
+    display: flex;
+    overflow-x: auto;
+    gap: 5px;
+    
 
 }
+
+
 
 .gallery img {
     width: 100%;
@@ -268,7 +272,7 @@ body {
     background: transparent;
     padding: 8px;
     padding: 10px 14px;
-    
+
 }
 
 .form label {
@@ -302,11 +306,11 @@ body {
     margin-top: 8px;
 }
 
-.wa-btn{
+.wa-btn {
     text-decoration: none;
     color: tan;
     padding-bottom: 20px;
-    
+
 }
 
 
@@ -410,8 +414,8 @@ body {
         display: flex;
 
     }
-    
-     
+
+
 
     .nav a {
         display: none;
